@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Water Pump Controller</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <h1>Smart Pump</h1>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <ul>
+          <li><a href="#" id="navHome">Home</a></li>
+          <li><a href="#about" id="navAbout">About</a></li>
+          <li><a href="#features" id="navFeatures">Features</a></li>
+          <li><a href="#why" id="navWhy">Why Choose Us</a></li>
+          <li><a href="#contact" id="navContact">Contact</a></li>
+        </ul>
+        <select class="lang-select" onchange="changeLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="hi">हिंदी</option>
+        </select>
+      </nav>
+      <a href="#" id="backToTop" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+      </a>  
+      <header>
+        <h1 id="mainHeading">Water Level Controller</h1>
+        <p id="mainTagline">Automate your water tank refilling with intelligent control and savings.</p>
+      </header>
+  <section class="features" id="about" data-aos="fade-up">
+    <h2>Automate Your Water Management</h2>
+    <p>Our Smart Water Pump Controller ensures your pump operates only when needed — saving time, water, and energy. Say goodbye to overflowing tanks and manual monitoring.</p>
+  </section>
+  <section class="versions" data-aos="fade-up">
+    <h2>Choose Your Version</h2>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Semi-Automatic</th>
+          <th>Fully Automatic</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Auto Turn OFF</td>
+          <td>✅</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>Auto Turn ON</td>
+          <td>❌</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>Manual Start</td>
+          <td>✅</td>
+          <td>❌</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td>💰 Budget-Friendly</td>
+          <td>💸 Higher</td>
+        </tr>
+        <tr>
+          <td>Ideal For</td>
+          <td>Users who prefer manual control</td>
+          <td>Hands-free users</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="https://wa.me/919336014234" class="buy-btn">Buy Now on WhatsApp</a>
+  </section>
+  <section class="benefits" id="why" data-aos="fade-up">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>No more water wastage</li>
+      <li>Reduce electricity bills</li>
+      <li>Protect your motor from dry runs</li>
+      <li>Easy installation and maintenance</li>
+      <li>Durable and reliable</li>
+      <li>Smart investment for a smart home</li>
+    </ul>
+  </section>
+  <section data-aos="fade-up">
+    <h2>How It Works</h2>
+    <p>Our system uses water level sensors installed in your water tank. The control unit operates your pump based on water levels — no app or Wi-Fi needed. Just simple automation that works.</p>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>What’s in the Box?</h2>
+    <ul>
+      <li>Smart Control Unit (Semi or Fully Automatic)</li>
+      <li>Sensor Kit</li>
+      <li>Installation Guide</li>
+      <li>Warranty Card (1 Year)</li>
+    </ul>
+  </section>
+  <section data-aos="fade-up">
+    <h2>Who Is It For?</h2>
+    <ul>
+      <li>Homeowners</li>
+      <li>Apartments & Housing Societies</li>
+      <li>Small Industries</li>
+      <li>Schools & Institutions</li>
+      <li>Eco-conscious individuals</li>
+    </ul>
+  </section>
+  <section class="testimonial" data-aos="fade-up">
+    <h2>What Our Customers Say</h2>
+    <blockquote>
+      “I used to forget switching off the motor all the time. This device has been a lifesaver — my water bill has dropped and I don’t worry anymore!”
+      <cite>— Priya, Kanpur</cite>
+    </blockquote>
+    <blockquote>
+      “Installation was a breeze, and the support team was very helpful. Great product for every household!”
+      <cite>— Ramesh, Kanpur</cite>
+    </blockquote>
+  </section>
+  <section class="demo-video">
+    <h2 style="text-align:center;" id="demoHeading">🎥 Watch Demo</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/5Ol_9gEkfPU" title="Smart Water Pump Demo" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section class="contact" id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>Ready to automate your water pump? Have questions or need a custom solution?</p>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+    <section id ="contact-info">
+        <p style="margin-top: 20px;">Or contact us directly:</p>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a><br />
+        Phone: <a href="tel:+918840227146">+918840227146</a><br />
+        Phone: <a href="tel:+919336014234">+919336014234</a><br />
+        Location: Gopal Nagar, kanpur, uttar Pradash, India</p>
+    </section>
+    
+  </section>
+  <a href="https://wa.me/918840227146" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+
+  <footer>
+    <p>&copy; 2025 Smart Water Pump Controller. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
